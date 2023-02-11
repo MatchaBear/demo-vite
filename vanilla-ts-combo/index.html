@@ -8,6 +8,41 @@
   </head>
   <body>
     <div id="app"></div>
+     <body>
+    <main>
+      <section>
+        <form id="input-form">
+          <div>
+            <label for="input-field">Enter amount in SGD:</label>
+            <input type="number" id="input-field" />
+          </div>
+          <div>
+            <button type="submit" id="button-submit">Count</button>
+          </div>
+        </form>
+        <div id="check-rate"></div>
+      </section>
+      <section>
+        <div>
+          <h1 id="output-field"></h1>
+        </div>
+      </section>
+    </main>
+    <section>
+      <label for="from-currency-select">From: </label
+      ><select name="from-currency" id="from-currency-select">
+        <option value="">--Choose currency</option>
+      </select>
+      <label for="to-currency-select">To: </label
+      ><select name="to-currency" id="to-currency-select">
+        <option value="">--Choose currency</option>
+      </select>
+    </section>
+    <section>
+      <button type="button" id="button-get-api">Get API</button>
+      <p>Get API:</p>
+      <div id="live-rate"></div>
+    </section>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
