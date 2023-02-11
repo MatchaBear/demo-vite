@@ -10,13 +10,11 @@ import './style.css'
 import currencyToSymbolMap from 'currency-symbol-map/map'
 console.log(currencyToSymbolMap)
 
-const inputForm = document.getElementById("input-form");
+const inputForm = document.querySelector<HTMLDivElement>("#input-form");
 const getInputElementId = document.getElementById("input-field");
 const getOutputElementId = document.getElementById("output-field");
 const rateCheck = document.getElementById("check-rate");
-const fetchUrlCheck = document.getElementById("check-fetch-url");
 const buttonGetApi = document.getElementById("button-get-api");
-const liveRate = document.getElementById("live-rate");
 
 // will be inside a function
 inputForm.addEventListener("submit", async (event) => {
@@ -29,7 +27,9 @@ inputForm.addEventListener("submit", async (event) => {
   const response = await fetch(sgdToIdrConvertUrl);
   const data = await response.json();
   const liveRate = data.result;
-  const output = getInputElementId.value * liveRate;
+  if(getInputElementId) {
+    const output = getInputElementId.value * liveRate;
+  }
   const outputTwoDecimalRoundUp = Number.parseFloat(output).toFixed(2);
   getOutputElementId.innerText =
     getInputElementId.value + " SGD = " + outputTwoDecimalRoundUp + " IDR";
