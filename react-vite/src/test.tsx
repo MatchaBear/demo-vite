@@ -1,7 +1,8 @@
 export default function Test123() {
   return (
     <div>
-      <button>Click me!</button>
+      <h1>Hello World</h1>
+      <h2>My name is Bernhard</h2>
     </div>
   );
 }
