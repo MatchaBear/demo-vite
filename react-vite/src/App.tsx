@@ -1,19 +1,22 @@
-import Test123 from "./test";
+import { Test123 as HelloWorldIntro } from "./test";
+import { HelloAgain } from "./test";
 
 export default function App() {
   return (
     <div>
       <button id="clickme">Click Me!</button>
-      <Test123 />
-      <TestABC />
-      <Test123 />
-      <TestABC />
+      <HelloWorldIntro />
+      <IAmLearningReact />
+      <HelloAgain />
+      <HelloWorldIntro />
+      <IAmLearningReact />
+      <HelloAgain />
       <div id="afterclicked">{/*  */}</div>
     </div>
   );
 }
 
-function TestABC() {
+function IAmLearningReact() {
   return (
     <div>
       <h3>I am learning React</h3>
