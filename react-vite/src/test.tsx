@@ -14,3 +14,10 @@ export function HelloAgain() {
     </div>
   );
 }
+
+export default function EmptyParagraph() {
+  return (
+    <p>A</p>
+    <p>B</p>
+    )
+}
