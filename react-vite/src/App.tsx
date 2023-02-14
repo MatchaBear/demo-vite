@@ -23,12 +23,3 @@ function IAmLearningReact() {
     </div>
   );
 }
-
-// const abc = document.getElementById("clickme");
-
-// abc?.addEventListener("click", (event) => {
-//   event.preventDefault();
-
-//   const xyz = document.getElementById("afterclicked");
-//   xyz.appendChild(document.createElement("h1"));
-// });
