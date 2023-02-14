@@ -1,5 +1,4 @@
-import { Test123 as HelloWorldIntro } from "./test";
-import { HelloAgain } from "./test";
+import EmptyParagraph, { Test123 as HelloWorldIntro, HelloAgain } from "./test";
 
 export default function App() {
   return (
@@ -11,6 +10,7 @@ export default function App() {
       <HelloWorldIntro />
       <IAmLearningReact />
       <HelloAgain />
+      <EmptyParagraph />
       <div id="afterclicked">{/*  */}</div>
     </div>
   );

@@ -17,7 +17,9 @@ export function HelloAgain() {
 
 export default function EmptyParagraph() {
   return (
-    <p>A</p>
-    <p>B</p>
-    )
+    <section>
+      <p></p>
+      <p></p>
+    </section>
+  );
 }
